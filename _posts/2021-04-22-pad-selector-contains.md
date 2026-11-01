@@ -13,7 +13,6 @@ Webレコーダーを使ってUI要素を取得するとボタンポチポチで
 
 ![](/images/Webレコーダー-2.png)
 
-![](blob:https://papasensei365.com/b11ef51d-6432-45af-9b52-6a3b12e60260)
 
 ![](/images/Webレコーダー_セレクタービルダー.png)
 

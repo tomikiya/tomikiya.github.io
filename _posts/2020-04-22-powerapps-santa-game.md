@@ -43,7 +43,7 @@ https://www.youtube.com/watch?v=ZTMoB74P7sI
 
 トップ画面(Top)、ステージ画面(Stage)、結果画面(Result)の3種類作成します。
 
-![](/images/20200421194651-1.png "f:id:tomikiya:20200421194651p:plain")
+![](/images/20200421194651-1.png)
 
 ### 初期設定をOnVisibleで設定する
 
@@ -161,9 +161,9 @@ Constのように変数にレコードを指定することもできます。
 
 ↓[ホーム]-[コレクション]を確認するとこんな感じになってます。※画像はあらかじめ[メディア]で登録済みです。
 
-![](/images/20200421195050-1-1024x718.png "f:id:tomikiya:20200421195050p:plain")
+![](/images/20200421195050-1-1024x718.png)
 
-![](/images/20200421195102-1.png "f:id:tomikiya:20200421195102p:plain")
+![](/images/20200421195102-1.png)
 
 ### サンタを動かすコントロールについて
 
@@ -173,7 +173,7 @@ Constのように変数にレコードを指定することもできます。
 この時の注意点としては、スライダーは星より上になるように再配置することです。  
 星の下に配置するとスライダーを触れなくなります。
 
-![](/images/20200421195212-1-1024x369.png "f:id:tomikiya:20200421195212p:plain")
+![](/images/20200421195212-1-1024x369.png)
 
 今回はSliderSantaのMaxとMinを10と0に設定し、11段階にしました。  
 StarもSliderSantaに合わせて11段階で動くようにX座標を以下のように指定します。
@@ -207,7 +207,7 @@ Power Appsに用意されているプロパティでよく使うのは、ボタ�
 さらにタイマーには実行する時間の長さを指定する**Duration**と、繰り返しを行う**Repeat**があります。  
 察しの良い方ならわかると思いますが、Durationを小さくし、Repeatを有効にすると短いサイクルでOnTimerStartやOntimerEndがユーザのアクションなしに実行され続けるようになります。
 
-![](/images/20200421195415-1.png "f:id:tomikiya:20200421195415p:plain")
+![](/images/20200421195415-1.png)
 
 サンタの動きはスライダーのValueを加算し続けるようにしたいのでタイマー(SantaMotionEvent)を1つ用意し、OnTimerStartに以下のような処理を入れます。
 
@@ -235,7 +235,7 @@ Durationは10(ミリ秒)に設定しておけば十分でした。
 damageFLGが**無効から有効に切り替わったときにタイマーが動きます**。  
 サンタと悪魔がぶつったときにdamageFLGを有効にすればタイマーが動き始める仕掛けになります。
 
-![](/images/20200421195610-1.png "f:id:tomikiya:20200421195610p:plain")
+![](/images/20200421195610-1.png)
 
 OnTimerEndでdamageFLGを無効にしています。  
 またタイマーが動き始めて2秒後に止まる算段です。
@@ -302,7 +302,7 @@ Present1.Visible = First(Filter(presents,id=1)).visible
 ※Present2 ～ Present4も同様  
 ※Visibleだけ取り出し方が違いますが、敢えて違う方法で取り出しただけです。LookUpで問題ありません。
 
-![](/images/20200421214259-1.png "f:id:tomikiya:20200421214259p:plain")
+![](/images/20200421214259-1.png)
 
 #### プレゼントの動きもタイマーで管理
 
@@ -433,7 +433,7 @@ If(
 Score3.Visible = If(Mod(score,5)>=3,true,false)
 ```
 
-![](/images/20200421214613-1.png "f:id:tomikiya:20200421214613p:plain")
+![](/images/20200421214613-1.png)
 
 点数表示も同様にスコアによって画像を切り替えています。
 
@@ -460,7 +460,7 @@ DemonSeAudio.Start = DemonSeFLG && musicFLG
 DemonSeAudio.OnEnd = UpdateContext({DemonSeFLG:false});Reset(DemonSeAudio)
 ```
 
-![f:id:tomikiya:20200421214708p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/t/tomikiya/20200421/20200421214708.png "f:id:tomikiya:20200421214708p:plain")
+![](/images/20200421214708.png)
 
 ## ということで
 

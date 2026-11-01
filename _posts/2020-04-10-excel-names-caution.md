@@ -49,7 +49,7 @@ msgbox Names("hoge").RefersToRange.Value
 
 名前の管理で名前定義をつける時に「範囲」という項目があります。
 
-![f:id:tomikiya:20200407201049p:plain](/images/20200407201049.png "f:id:tomikiya:20200407201049p:plain")
+![](/images/20200407201049.png)
 
 ここでブックとシート名を選択するのですがこの指定によって参照できないケースが発生します。
 
@@ -73,7 +73,7 @@ msgbox Range("hoge").value
 
 名前ボックスは↓ここです。
 
-![f:id:tomikiya:20200407201302p:plain](/images/20200407201302.png "f:id:tomikiya:20200407201302p:plain")
+![](/images/20200407201302.png)
 
 ここに名前を入れてEnterすると範囲が「ブック」の名前定義として登録されます。
 
@@ -92,19 +92,19 @@ VBAの書き方が悪いとユーザの操作によってはエラーが起こ�
 
 ワークシート「色」のA1にcolorという名前定義（範囲が「ブック」扱い）をつけます。値は赤にします。
 
-![f:id:tomikiya:20200407201500p:plain](/images/20200407201500.png "f:id:tomikiya:20200407201500p:plain")
+![](/images/20200407201500.png)
 
 ワークシートをコピーして「色(2)」を作ります。A1の値は青にします。
 
-![f:id:tomikiya:20200407201515p:plain](/images/20200407201515.png "f:id:tomikiya:20200407201515p:plain")
+![](/images/20200407201515.png)
 
 色(2)のA1に登録されているcolorは前述したとおり範囲が「シート」として登録されます。
 
-![f:id:tomikiya:20200407201559p:plain](/images/20200407201559.png "f:id:tomikiya:20200407201559p:plain")
+![](/images/20200407201559.png)
 
 ワークシート(Sheet3)を挿入します。A1の値は緑にします。名前定義は登録しません。
 
-![f:id:tomikiya:20200407201634p:plain](/images/20200407201634.png "f:id:tomikiya:20200407201634p:plain")
+![](/images/20200407201634.png)
 
 この状態での挙動は以下の通りとなります。
 

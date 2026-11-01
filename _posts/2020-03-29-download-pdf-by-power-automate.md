@@ -36,38 +36,38 @@ https://www.pref.niigata.lg.jp/sec/kenko/bukan-haien.html
 - ファイルをダウンロードしてOneDriveに保存する
 
 完成形は以下のようになります。
-![f:id:tomikiya:20200329185340p:plain](/images/20200329185340.png "f:id:tomikiya:20200329185340p:plain")
+![](/images/20200329185340.png)
 
 ## ポータルサイトを開く
 
 まずは[ポータルサイト](https://flow.microsoft.com/ja-jp/)を開きます。アカウントが無い場合は登録しておきましょう。
-![f:id:tomikiya:20200329165502p:plain](/images/20200329165502.png "f:id:tomikiya:20200329165502p:plain")
+![](/images/20200329165502.png)
 
 ## フローを作る
 
 今回は「定時になったら、PDFをダウンロードしてOneDriveに保存する」フローを作ります。
 「＋作成」を選び「予定フローを作成」を選びます。
-![f:id:tomikiya:20200329170137p:plain](/images/20200329170137.png "f:id:tomikiya:20200329170137p:plain")
+![](/images/20200329170137.png)
 フロー名は後で見ても分かるようにしておきます。
 今回は1日1回取得するようにしたいので繰り返し間隔を1日にします。
-![f:id:tomikiya:20200329170740p:plain](/images/20200329170740.png "f:id:tomikiya:20200329170740p:plain")
+![](/images/20200329170740.png)
 
 ### サイトをスクレイピングしてファイル名を取得する
 
 今回ターゲットにしているサイトではPDFファイルのアドレスが毎回変わるようなので都度スクレイピングしてファイル名を取得する必要があります。
 このためまずはHTMLを取得して解析します。
 「次のステップ」をクリックしてアクションを選びます。様々なアクションがありますので検索窓で「One Drive」を検索し絞り込みます。
-![f:id:tomikiya:20200329171654p:plain](/images/20200329171654.png "f:id:tomikiya:20200329171654p:plain")
+![](/images/20200329171654.png)
 「URL からのファイルのアップロード」を選びます。
 ソースURLにPDFがアップされているサイトのURLを指定し、対象のファイルパスに保存先のOneDriveを指定します。上書きは「はい」を指定します。
-![f:id:tomikiya:20200329172124p:plain](/images/20200329172124.png "f:id:tomikiya:20200329172124p:plain")
+![](/images/20200329172124.png)
 これでHTMLファイルがOneDriveに保存されます。
 アクションの名前がデフォルトだと保守がつらくなるので名前を変更しておくと便利です。
-![f:id:tomikiya:20200329172555p:plain](/images/20200329172555.png "f:id:tomikiya:20200329172555p:plain")
+![](/images/20200329172555.png)
 次にこのHTMLファイルを呼び出しPower Automateに取り込みます。
 「新しいステップ」をクリックし「パスによるファイルコンテンツの取得」を選択します。
 ファイルパスは先ほど指定した「対象ファイルのパス」にします。
-![f:id:tomikiya:20200329173628p:plain](/images/20200329173628.png "f:id:tomikiya:20200329173628p:plain")
+![](/images/20200329173628.png)
 ここまでのアクションが正しく動いているか確認してみます。
 「保存」を押してみましょう。
 
@@ -75,15 +75,15 @@ https://www.pref.niigata.lg.jp/sec/kenko/bukan-haien.html
 
 HTMLが取れているかフローをテストしてみます。
 画面右上の「テスト」を押してます。
-![f:id:tomikiya:20200329174002p:plain](/images/20200329174002.png "f:id:tomikiya:20200329174002p:plain")
+![](/images/20200329174002.png)
 ↓
-![f:id:tomikiya:20200329174030p:plain](/images/20200329174030.png "f:id:tomikiya:20200329174030p:plain")
+![](/images/20200329174030.png)
 ↓
-![f:id:tomikiya:20200329174205p:plain](/images/20200329174205.png "f:id:tomikiya:20200329174205p:plain")
+![](/images/20200329174205.png)
 ↓
-![f:id:tomikiya:20200329174306p:plain](/images/20200329174306.png "f:id:tomikiya:20200329174306p:plain")
+![](/images/20200329174306.png)
 正常に完了するとHTMLテキストが取得できていることが分かります。
-![f:id:tomikiya:20200329174416p:plain](/images/20200329174416.png "f:id:tomikiya:20200329174416p:plain")
+![](/images/20200329174416.png)
 エラーが出たらエラー内容を読んで原因を解消しましょう。
 
 ### HTMLテキストを解析する
@@ -109,7 +109,7 @@ HTMLが取れているかフローをテストしてみます。
 **名前**： 変数名です。今回は`baseURL`とします。
 **種類**： 型です。文字列を指定します。
 **値**： 代入する値です。`https://www.pref.niigata.lg.jp`を指定します。
-![f:id:tomikiya:20200329175635p:plain](/images/20200329175635.png "f:id:tomikiya:20200329175635p:plain")
+![](/images/20200329175635.png)
 
 ### 文字列を分割してURLを取得する
 
@@ -131,10 +131,10 @@ concat(variables('baseURL'), split(split(split(body('HTMLファイルの取得')
 ```
 
 この式を「変数の初期化する」のアクションを追加して値に格納します。
-![f:id:tomikiya:20200329181506p:plain](/images/20200329181506.png "f:id:tomikiya:20200329181506p:plain")
+![](/images/20200329181506.png)
 注意ですが、値の部分はコピペで直接入力すると正しく反映されないです。
 別に表示される窓の中で「式」タブを選択してそこにコピペして更新ボタンを押してください。
-![f:id:tomikiya:20200329183423p:plain](/images/20200329183423.png "f:id:tomikiya:20200329183423p:plain")
+![](/images/20200329183423.png)
 正しく更新されると値の部分に「fx | ....」と表示されるはずです。
 
 ### 他のPDFファイルのURLも取得する
@@ -152,26 +152,26 @@ concat(variables('baseURL'), split(split(split(body('HTMLファイルの取得')
 ```
 
 ここまでの設定でアクションは以下のようになります。※変数の初期化の順序が説明の順序と異なっています、すいません。
-![f:id:tomikiya:20200329183911p:plain](/images/20200329183911.png "f:id:tomikiya:20200329183911p:plain")
+![](/images/20200329183911.png)
 
 ### URLを元にPDFファイルをダウンロードする
 
 「URL からのファイルのアップロード」のアクションを追加して今ほど作った変数を指定します。
 別窓の「動的なコンテンツ」の中から変数を探してクリックして追加できます。
-![f:id:tomikiya:20200329184436p:plain](/images/20200329184436.png "f:id:tomikiya:20200329184436p:plain")
+![](/images/20200329184436.png)
 他の2つのPDFも同様のアクションでそれぞれ追加します。
 以上で完成です。保存を忘れないようにしましょう。
-![f:id:tomikiya:20200329185111p:plain](/images/20200329185111.png "f:id:tomikiya:20200329185111p:plain")
+![](/images/20200329185111.png)
 
 ## フローを実行してOneDriveにPDFが保存されているか確認する
 
 左ペインの「マイフロー」からフローを選択して詳細を確認します。
-![f:id:tomikiya:20200329191523p:plain](/images/20200329191523.png "f:id:tomikiya:20200329191523p:plain")
+![](/images/20200329191523.png)
 画面上部の再生ボタンでフローを実行できます。
 結果は画面下部に表示されます。
-![f:id:tomikiya:20200329191640p:plain](/images/20200329191640.png "f:id:tomikiya:20200329191640p:plain")
+![](/images/20200329191640.png)
 成功したかOneDriveを開いて確認してみてください。
-![f:id:tomikiya:20200329192927p:plain](/images/20200329192927.png "f:id:tomikiya:20200329192927p:plain")
+![](/images/20200329192927.png)
 うまくできましたね。
 
 ## ということで

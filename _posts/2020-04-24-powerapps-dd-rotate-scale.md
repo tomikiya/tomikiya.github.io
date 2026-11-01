@@ -7,12 +7,12 @@ categories: [PowerPlatform]
 
 ドラッグ＆ドロップを疑似的にPowerAppsで出来たことで実現できる機能の幅が広がりました。
 参考
-[Power Appsでまだ利用できないドラッグ&ドロップを実装する方法](https://papasensei365.com/powerapps-drag-and-drop/)
+[Power Appsでまだ利用できないドラッグ&ドロップを実装する方法](https://tomikiya.github.io/powerapps-drag-and-drop/)
 今回はそれを応用したものです。
 ## 画像の回転と拡大縮小
 
 スライダーを2本用意してそれぞれを操作することなく画像を回転させたり拡大縮小できるようになります。
-![f:id:tomikiya:20200423210015g:plain](/images/20200423210015.gif "f:id:tomikiya:20200423210015g:plain")
+![](/images/20200423210015.gif)
 
 ## 方針
 
@@ -106,7 +106,7 @@ If(interval=0,
 ### HTMLテキストの利用
 
 [ドラック＆ドロップの記事](https://www.papasensei365.info/entry/2019/08/21/000000)ではアイコンを移動させていました。今回これをHTMLテキストに変更します。
-![f:id:tomikiya:20200423204511p:plain](/images/20200423204511.png "f:id:tomikiya:20200423204511p:plain")
+![](/images/20200423204511.png)
 HtmlTextにて、先ほど求めておいた角度と力の大きさを入れることで画像が回転したり拡大縮小したりします。
 
 ```
@@ -131,7 +131,7 @@ left: 50%'>
 ## 応用
 
 ちょっと変更すると十字キーのコントローラを作れますね。夢が広がりそうです。
-![f:id:tomikiya:20200423205132g:plain](/images/20200423205132.gif "f:id:tomikiya:20200423205132g:plain")
+![](/images/20200423205132.gif)
 
 ## サンプル
 

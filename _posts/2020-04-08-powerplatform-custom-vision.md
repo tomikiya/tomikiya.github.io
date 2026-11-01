@@ -11,17 +11,17 @@ Custom Visionを勉強するために、植物の状態を判定するアプリ�
 
 植物の画像を取り込んで送信すると症状を判定してくれます。
 
-![](/images/20200406213522-1.png "f:id:tomikiya:20200406213522p:plain")
+![](/images/20200406213522-1.png)
 
 GIF
 
-![](/images/20200408233447-1.gif "f:id:tomikiya:20200408233447g:plain")
+![](/images/20200408233447-1.gif)
 
 ## 概要
 
 画像選択用のアプリをPower Appsで作成し、画像の送信をPower Automateにまかせ、画像の判定をCustom Visionで行います。
 
-![](/images/20200406213632-1.png "f:id:tomikiya:20200406213632p:plain")
+![](/images/20200406213632-1.png)
 
 ## 詳細
 
@@ -40,26 +40,26 @@ Azureが初めてという場合は[Portal](https://portal.azure.com/#home)で�
 
 まずは[Portal](https://portal.azure.com/#home)からリソースグループ一覧に遷移してグループを追加します。
 
-![](/images/20200406213703-1.png "f:id:tomikiya:20200406213703p:plain")
+![](/images/20200406213703-1.png)
 
-![](/images/20200406213736-1.png "f:id:tomikiya:20200406213736p:plain")
+![](/images/20200406213736-1.png)
 
 リソースグループは適宜決めます。
 
-![](/images/20200406213830-1.png "f:id:tomikiya:20200406213830p:plain")
+![](/images/20200406213830-1.png)
 
 リソースグループを作ったらそのグループを選択してリソースを追加します。
 
-![](/images/20200406213904-1-1024x345.png "f:id:tomikiya:20200406213904p:plain")
+![](/images/20200406213904-1-1024x345.png)
 
 Custom Visionを検索して選択し、次ページで作成します。
 
-![](/images/20200406213916-1.png "f:id:tomikiya:20200406213916p:plain")
+![](/images/20200406213916-1.png)
 
 TrainingとPrediction両方作成します。Locationは揃えておきます。  
 pricing tierはF0が無料プランでS0が有料プランになります。好きな方を選択します。
 
-![](/images/20200406213927-1.png "f:id:tomikiya:20200406213927p:plain")
+![](/images/20200406213927-1.png)
 
 以上でリソースの準備が完了です。
 
@@ -71,12 +71,12 @@ Nameは適宜、Resourceには先ほど登録したリソースを指定しま�
 画像全体を判定するためProject TypeはClassificationにしました。  
 Domainsは適切なものが無かったのでGeneralにしました。食品の画像判定とかならFoodが良いのでしょうね。
 
-![](/images/20200406213944-1.png "f:id:tomikiya:20200406213944p:plain")
+![](/images/20200406213944-1.png)
 
 プロジェクトができたらトレーニング用の画像をどんどんアップロードします。  
 その画像が何を意味するのかタグも付けていきます。
 
-![](/images/20200406213953-1.png "f:id:tomikiya:20200406213953p:plain")
+![](/images/20200406213953-1.png)
 
 今回、画像は以下のサイトのものを利用しました。
 
@@ -84,22 +84,22 @@ Domainsは適切なものが無かったのでGeneralにしました。食品の
 
 Trainで画像の分析を行います。
 
-![](/images/20200406214004-1.png "f:id:tomikiya:20200406214004p:plain")
+![](/images/20200406214004-1.png)
 
 分析が完了するとPerformanceに結果が表示されます。この段階でQuick Testもできるので試してみるとよいでしょう。
 
-![](/images/20200406214013-1-1024x614.png "f:id:tomikiya:20200406214013p:plain")
+![](/images/20200406214013-1-1024x614.png)
 
 #### 公開する
 
 最後にPublishで公開して完了です。
 
-![](/images/20200406214023-1.png "f:id:tomikiya:20200406214023p:plain")
+![](/images/20200406214023-1.png)
 
 Prediction URLで情報を確認できます。  
 **URLの一部とPrediction-Keyは後で使いますのでメモしておきます。**
 
-![](/images/20200406214034-1.png "f:id:tomikiya:20200406214034p:plain")
+![](/images/20200406214034-1.png)
 
 参考  
 [Prediction API でモデルを使用する](https://docs.microsoft.com/ja-jp/azure/cognitive-services/custom-vision-service/use-prediction-api)
@@ -108,15 +108,15 @@ Prediction URLで情報を確認できます。
 
 [Power Automate](https://japan.flow.microsoft.com/ja-jp/)にてフローを作成します。
 
-![](/images/20200406214046-1.png "f:id:tomikiya:20200406214046p:plain")
+![](/images/20200406214046-1.png)
 
 トリガーはPowerAppsとします。
 
-![](/images/20200406214111-1.png "f:id:tomikiya:20200406214111p:plain")
+![](/images/20200406214111-1.png)
 
 プレビュー版ではありますが、Custom Visionのアクションが用意されていますのでこれを使います。
 
-![](/images/20200406214121-1.png "f:id:tomikiya:20200406214121p:plain")
+![](/images/20200406214121-1.png)
 
 Custom Visionとの接続設定を行います。
 
@@ -126,7 +126,7 @@ Custom Visionとの接続設定を行います。
 | **Prediction Key** | メモしておいたKey |
 | **Site URL** | メモしておいたURLのうち、`https://xxxxxxxx.cognitiveservices.azure.com/` まで |
 
-![](/images/20200406214132-1.png "f:id:tomikiya:20200406214132p:plain")
+![](/images/20200406214132-1.png)
 
 さらにProjectの設定を行います。
 
@@ -151,11 +151,11 @@ dataUriToBinary(triggerBody()['Classifyanimage(V2)_ImageContent'])
 
 ↓こんな感じです。
 
-![](/images/20200406214147-1.png "f:id:tomikiya:20200406214147p:plain")
+![](/images/20200406214147-1.png)
 
 最後に応答を追加します。本文はPredictionsにします。
 
-![](/images/20200406214157-1.png "f:id:tomikiya:20200406214157p:plain")
+![](/images/20200406214157-1.png)
 
 応答本文のJSONスキーマは[サンプルから生成]で簡単に入力できます、requiredの部分があると失敗するので消しておきます。
 
@@ -189,16 +189,16 @@ Power Automateの設定は以上です。
 
 キャンパスアプリで作ります。形式は電話にします。
 
-![](/images/20200406214227-1.png "f:id:tomikiya:20200406214227p:plain")
+![](/images/20200406214227-1.png)
 
-![](/images/20200406214309-1.png "f:id:tomikiya:20200406214309p:plain")
+![](/images/20200406214309-1.png)
 
 #### ボタンを配置
 
 初期画面には撮影するためのボタンとローカルファイルを選択するためのボタンを配置します。ヘッダは省略しても問題ないです。  
 [挿入]-[ボタン]から挿入できます。
 
-![](/images/20200406214316-1.png "f:id:tomikiya:20200406214316p:plain")
+![](/images/20200406214316-1.png)
 
 #### 写真選択ボタンの設定
 
@@ -206,7 +206,7 @@ Power Automateの設定は以上です。
 写真選択のボタンの上に重ねることでボタンのように見せかけることができます。  
 [画像の追加]を挿入するとUploadImageも挿入されますが今回は不要なので削除しておきます。さらに「タップまたはクリックして画像を追加」の文字が邪魔なのでTextを空欄にします。
 
-![](/images/20200406214326-1.png "f:id:tomikiya:20200406214326p:plain")
+![](/images/20200406214326-1.png)
 
 ```
 AddMediaButton.Text = ""
@@ -225,7 +225,7 @@ AddMediaButton.OnChange = ClearCollect(SelectedPic,AddMediaButton.Media);Navigat
 
 次画面に画像を表示するコントロール(Image)を配置します。
 
-![](/images/20200406214341-1.png "f:id:tomikiya:20200406214341p:plain")
+![](/images/20200406214341-1.png)
 
 前画面で取得した画像をImageコントロールに表示させるためImageプロパティを指定します。
 
@@ -252,7 +252,7 @@ Btn_Judge.OnSelect = UpdateContext({imageUri:JSON(Image.Image,IncludeBinaryData)
 
 [挿入]-[データテーブル]で結果を表示するテーブルを追加します。
 
-![](/images/20200406214356-1.png "f:id:tomikiya:20200406214356p:plain")
+![](/images/20200406214356-1.png)
 
 ```
 DataTable1.Items = res
@@ -261,7 +261,7 @@ DataTable1.Items = res
 **【補足】**  
 判定ボタンを押した結果、「True」だけしか返ってこないケースがあります。その場合は一度Power Apps側でPower Automateとの紐づけを削除して再度登録してみてください。
 
-![](/images/20200406214409-1.png "f:id:tomikiya:20200406214409p:plain")
+![](/images/20200406214409-1.png)
 
 一通りの流れは以上になります。
 

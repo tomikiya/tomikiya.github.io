@@ -7,7 +7,7 @@ categories: [Excel, Excel, スライサー]
 
 フィルター中の項目を取得する方法です。単一選択の場合は下記を参照してください。
 
-https://papasensei365.com/excel-selected-slicer1/
+https://tomikiya.github.io/excel-selected-slicer1/
 
 複数選択の場合は単一選択より若干複雑です。
 

@@ -5,7 +5,7 @@ slug: excel-game-dq3
 categories: [Excel]
 ---
 
-[English](https://papasensei365.com/excel-game-dq3-english/)
+[English](https://tomikiya.github.io/excel-game-dq3-english/)
 
 久しぶりにExcelでゲームを再現してみました。
 
@@ -135,7 +135,7 @@ Excelのオプション設定から反復計算を有効にします。すると
 
 以前作ったマインスイーパーはこの反復を使って揮発性関数を自動計算させないようにして経過時間を計算したりしています。反復計算はいろんなところに応用できますね。（業務で使えるとは言っていません。）
 
-https://papasensei365.com/excel-game-minesweeper/
+https://tomikiya.github.io/excel-game-minesweeper/
 
 ### セル上で疑似的なプログラミングを実現する
 
@@ -289,7 +289,7 @@ cntが入力値未満ならステップ2に戻り、入力値以上ならステ�
 
 ボタン操作は今まで何度か作ってきたゲームの記事で説明していますので省略します。
 
-https://papasensei365.com/excel-nonvba-3d-maze/#toc3
+https://tomikiya.github.io/excel-nonvba-3d-maze/
 
 以上が、Excelでドラクエを再現する方法になります。
 
@@ -333,11 +333,11 @@ https://papasensei365.com/excel-nonvba-3d-maze/#toc3
 
 【VBAを使わないゲームシリーズ】
 
-https://papasensei365.com/excel-nonvba-3d-maze/
+https://tomikiya.github.io/excel-nonvba-3d-maze/
 
-https://papasensei365.com/excel-game-minesweeper/
+https://tomikiya.github.io/excel-game-minesweeper/
 
-https://papasensei365.com/excel-game-tetris/
+https://tomikiya.github.io/excel-game-tetris/
 
 このページで利用している株式会社スクウェア・エニックスを代表とする共同著作者が権利を所有する画像の転載・配布は禁止いたします。  
 © 1988 ARMOR PROJECT/BIRD STUDIO/SPIKE CHUNSOFT/SQUARE ENIX All Rights Reserved.

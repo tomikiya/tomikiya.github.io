@@ -45,13 +45,13 @@ https://www.youtube.com/watch?v=\_EGlyOLvw3Q
 
 ![](/images/画像の挿入.png)
 
-セル内へ埋め込むと数値や文字と同じように扱えるため、XLOOKUPのような関数で画像を検索して取得できるようになります。詳しくは[[Excel]画像をセルに埋め込められるようになったので何ができるか調べた](https://papasensei365.com/excel-image-tips-in-cell/ "詳しい話は別記事")にまとめています。
+セル内へ埋め込むと数値や文字と同じように扱えるため、XLOOKUPのような関数で画像を検索して取得できるようになります。詳しくは[[Excel]画像をセルに埋め込められるようになったので何ができるか調べた](https://tomikiya.github.io/excel-image-tips-in-cell/ "詳しい話は別記事")にまとめています。
 
 画像は１つずつIDをつけてあとで検索して呼び出せるようにし、テーブル化しておきます。
 
 ![](/images/backgroundデータ画像.png)
 
-セル内への画像埋め込みの残念な点として、複数のレイヤーを扱えません。背景が地面でキャラクターをその上に配置するような処理ができないので、背景とキャラクターを1つの画像にまとめてから配置することになります。つまり背景×キャラクター（上下左右）の組み合わせ全ての画像を用意します。今回はパターンが少なかったので全通りの画像を用意しましたが、それが難しい場合は散布図を使う方法がお勧めです。散布図を使ったゲームを詳しく知りたい場合は[ExcelでVBAを使わないでドラクエ3を再現する](https://papasensei365.com/excel-game-dq3/ "ExcelでVBAを使わないでドラクエ3を再現する")にて解説していますので確認してみてください。
+セル内への画像埋め込みの残念な点として、複数のレイヤーを扱えません。背景が地面でキャラクターをその上に配置するような処理ができないので、背景とキャラクターを1つの画像にまとめてから配置することになります。つまり背景×キャラクター（上下左右）の組み合わせ全ての画像を用意します。今回はパターンが少なかったので全通りの画像を用意しましたが、それが難しい場合は散布図を使う方法がお勧めです。散布図を使ったゲームを詳しく知りたい場合は[ExcelでVBAを使わないでドラクエ3を再現する](https://tomikiya.github.io/excel-game-dq3/ "ExcelでVBAを使わないでドラクエ3を再現する")にて解説していますので確認してみてください。
 
 ### マップを作る
 
@@ -87,7 +87,7 @@ IDでマップを管理できますので好きなようにパズルを変更し
 
 この状態でオプションボタンを連続クリックするとリンクするセルの位置が毎回1セルずつ下に移動し、押した履歴を残せるようになります。
 
-もっと詳しく知りたい場合は[ExcelでVBAを使わないでテトリスを再現する](https://papasensei365.com/excel-game-tetris/ "ExcelでVBAを使わないでテトリスを再現する")をご覧ください。
+もっと詳しく知りたい場合は[ExcelでVBAを使わないでテトリスを再現する](https://tomikiya.github.io/excel-game-tetris/ "ExcelでVBAを使わないでテトリスを再現する")をご覧ください。
 
 ### 操作履歴をもとに移動可否を計算する
 
@@ -176,13 +176,13 @@ next_y =IFS([@reset],init_chara_y, [@[can_move]],VALUE(INDEX(TEXTSPLIT([@[plan_c
 
 ## VBAを使わないExcelゲームシリーズ
 
-https://papasensei365.com/excel-game-dq3/
+https://tomikiya.github.io/excel-game-dq3/
 
-https://papasensei365.com/excel-game-tetris/
+https://tomikiya.github.io/excel-game-tetris/
 
-https://papasensei365.com/excel-nonvba-3d-maze/
+https://tomikiya.github.io/excel-nonvba-3d-maze/
 
-https://papasensei365.com/excel-game-minesweeper/
+https://tomikiya.github.io/excel-game-minesweeper/
 
 ## その他
 

@@ -24,29 +24,29 @@ Excel2016で確認していますが、Excel2010以上であればPowerQueryの�
 
 https://www.data.jma.go.jp/obd/stats/etrn/view/daily\_s1.php?prec\_no=54&block\_no=47604&year=2018&month=1&day=&view=
 
-![f:id:tomikiya:20200404091333p:plain](/images/20200404091333.png "f:id:tomikiya:20200404091333p:plain")
+![](/images/20200404091333.png)
 
 ## PowerQueryでテーブルデータを取得
 
 Excelを起動し[データ]-[Webから]を選択します。
 
-![f:id:tomikiya:20200404091411p:plain](/images/20200404091411.png "f:id:tomikiya:20200404091411p:plain")
+![](/images/20200404091411.png)
 
 URL欄に先ほど確認したURLを張り付けてOKを押します。
 
-![f:id:tomikiya:20200404091442p:plain](/images/20200404091442.png "f:id:tomikiya:20200404091442p:plain")
+![](/images/20200404091442.png)
 
 初回はアクセスの設定がでますがそのまま接続します。
 
-![f:id:tomikiya:20200404091530p:plain](/images/20200404091530.png "f:id:tomikiya:20200404091530p:plain")
+![](/images/20200404091530.png)
 
 するとある程度自動で解析してくれるので、左のテーブル一覧から該当のテーブルを選択しデータの変換を選択します。
 
-![f:id:tomikiya:20200404091557p:plain](/images/20200404091557.png "f:id:tomikiya:20200404091557p:plain")
+![](/images/20200404091557.png)
 
 PowerQueryが起動しデータが取れたことを確認できました。
 
-![f:id:tomikiya:20200404091631p:plain](/images/20200404091631.png "f:id:tomikiya:20200404091631p:plain")
+![](/images/20200404091631.png)
 
 ## データの整形
 
@@ -57,51 +57,51 @@ PowerQueryが起動しデータが取れたことを確認できました。
 列の見出しをクリックすると列を選択できます。複数選択はCtrl押しながらでできます。  
 残したい列を選択状態にして[ホーム]-[列の削除]-[他の列の削除]を選択します。
 
-![f:id:tomikiya:20200404091746p:plain](/images/20200404091746.png "f:id:tomikiya:20200404091746p:plain")
+![](/images/20200404091746.png)
 
 消えます。
 
-![f:id:tomikiya:20200404091909p:plain](/images/20200404091909.png "f:id:tomikiya:20200404091909p:plain")
+![](/images/20200404091909.png)
 
 ### 不要な行の削除
 
 4行目までは見出しになるので行削除を行います。  
 [ホーム]-[行の削除]-[上位の行の削除]を選択します。
 
-![f:id:tomikiya:20200404091940p:plain](/images/20200404091940.png "f:id:tomikiya:20200404091940p:plain")
+![](/images/20200404091940.png)
 
 行数に4を入れてOKします。
 
-![f:id:tomikiya:20200404092007p:plain](/images/20200404092007.png "f:id:tomikiya:20200404092007p:plain")
+![](/images/20200404092007.png)
 
 綺麗になりました。
 
-![f:id:tomikiya:20200404092025p:plain](/images/20200404092025.png "f:id:tomikiya:20200404092025p:plain")
+![](/images/20200404092025.png)
 
 ### 型を変更
 
 基本、型は自動的に判定してくれます。が、正答率はあれなので手動で変更しておきます。  
 見出しのアイコンをクリックすることで変更できます。
 
-![f:id:tomikiya:20200404092103p:plain](/images/20200404092103.png "f:id:tomikiya:20200404092103p:plain")
+![](/images/20200404092103.png)
 
 ## Excelに張り付ける
 
 整形したデータをExcelに読み込みます。  
 [ホーム]-[閉じて読み込む]を選択します。
 
-![f:id:tomikiya:20200404092152p:plain](/images/20200404092152.png "f:id:tomikiya:20200404092152p:plain")
+![](/images/20200404092152.png)
 
 新たなシートが作成されて表示されました。簡単ですね！
 
-![f:id:tomikiya:20200404092225p:plain](/images/20200404092225.png "f:id:tomikiya:20200404092225p:plain")
+![](/images/20200404092225.png)
 
 ### データの再取得
 
 データを更新するときは表を右クリックして「更新」を選択します。  
 Excelの関数と異なり自動的には更新されないのでご注意ください。
 
-![f:id:tomikiya:20200404092248p:plain](/images/20200404092248.png "f:id:tomikiya:20200404092248p:plain")
+![](/images/20200404092248.png)
 
 ## 1月~12月のデータを一括取得
 
@@ -119,14 +119,14 @@ https://www.data.jma.go.jp/obd/stats/etrn/view/daily_s1.php?prec_no=54&block_no=
 
 [データ]-[データの取得]-[Power Queryエディターの起動]を選択します。
 
-![f:id:tomikiya:20200404092709p:plain](/images/20200404092709.png "f:id:tomikiya:20200404092709p:plain")
+![](/images/20200404092709.png)
 
 ### 1月のデータを取得するクエリを関数に変更する
 
 先ほど作成した1月のデータを取得するクエリを改良します。  
 左ペインで選択し右クリックで詳細エディタ―を開きます。
 
-![f:id:tomikiya:20200404092735p:plain](/images/20200404092735.png "f:id:tomikiya:20200404092735p:plain")
+![](/images/20200404092735.png)
 
 ボタンポチポチで作ったクエリが表示されます。マクロの記録で自動生成されたVBAみたいなものです。ただ、VBAでは書かれておらずM言語で書かれています。初めてだと少しとっつきにくいかもしれませんね。ここではあまり詳細に触れないでおきます。
 
@@ -162,56 +162,56 @@ in
 
 変更したら完了を押します。
 
-![f:id:tomikiya:20200404093025p:plain](/images/20200404093025.png "f:id:tomikiya:20200404093025p:plain")
+![](/images/20200404093025.png)
 
 これで関数になります。
 
-![f:id:tomikiya:20200404093043p:plain](/images/20200404093043.png "f:id:tomikiya:20200404093043p:plain")
+![](/images/20200404093043.png)
 
 関数の名前がちょっと嫌なので変えておきます。  
 ダブルクリックまたは右クリックの名前の変更で変えられます。
 
-![f:id:tomikiya:20200404093116p:plain](/images/20200404093116.png "f:id:tomikiya:20200404093116p:plain")
+![](/images/20200404093116.png)
 
 ### 1から12のリストを作成する
 
 左ペインを右クリックして[新しいクエリ]-[その他のソース]-[空のクエリ]から空のクエリを作成します。
 
-![f:id:tomikiya:20200404093147p:plain](/images/20200404093147.png "f:id:tomikiya:20200404093147p:plain")
+![](/images/20200404093147.png)
 
 数式バーに`={1..12}`と入力すると1~12のリストが生成されます。
 
-![f:id:tomikiya:20200404093209p:plain](/images/20200404093209.png "f:id:tomikiya:20200404093209p:plain")
+![](/images/20200404093209.png)
 
 ### リストをテーブルに変換する
 
 [変換]-[テーブルへの変換]でリストからテーブルに変換しておきます。
 
-![f:id:tomikiya:20200404093245p:plain](/images/20200404093245.png "f:id:tomikiya:20200404093245p:plain")
+![](/images/20200404093245.png)
 
 ↓
 
-![f:id:tomikiya:20200404093302p:plain](/images/20200404093302.png "f:id:tomikiya:20200404093302p:plain")
+![](/images/20200404093302.png)
 
 テーブルの名称を「2018年新潟市気象データ」にします。  
 また、見出しのColumn1をクリックして列名も変更できます。「月」にしておきます。
 
-![f:id:tomikiya:20200404100212p:plain](/images/20200404100212.png "f:id:tomikiya:20200404100212p:plain")
+![](/images/20200404100212.png)
 
 ### 作成した関数を使う
 
 先ほど作成した関数と月のテーブルを使って12か月分のデータを取得します。  
 [列の追加]-[カスタム関数の呼び出し]を選択します。
 
-![f:id:tomikiya:20200404100328p:plain](/images/20200404100328.png "f:id:tomikiya:20200404100328p:plain")
+![](/images/20200404100328.png)
 
 関数クエリに`気象データ取得`を選択します。パラメータは自動的に月になるはずです。
 
-![f:id:tomikiya:20200404100401p:plain](/images/20200404100401.png "f:id:tomikiya:20200404100401p:plain")
+![](/images/20200404100401.png)
 
 すると新たな列が追加されて各行に「Table」と表示されます。Tableと表示されたセルの空白部分をクリックするとその中身が下部に表示されます。うまく取得できているようです。
 
-![f:id:tomikiya:20200404100702p:plain](/images/20200404100702.png "f:id:tomikiya:20200404100702p:plain")
+![](/images/20200404100702.png)
 
 ### Tableを展開する
 
@@ -219,42 +219,42 @@ in
 今回は全ての列を展開するためチェックはそのままにします。「元の列名をプレフィックスとして使用します。」は無効にしておきます。  
 有効にしてもよいですが列名が長くなります。
 
-![f:id:tomikiya:20200404101033p:plain](/images/20200404101033.png "f:id:tomikiya:20200404101033p:plain")
+![](/images/20200404101033.png)
 
 ↓うまくいきましたね。
 
-![f:id:tomikiya:20200404101158p:plain](/images/20200404101158.png "f:id:tomikiya:20200404101158p:plain")
+![](/images/20200404101158.png)
 
 ### Errorの修正
 
 一部エラーが出ています。
 
-![f:id:tomikiya:20200404101227p:plain](/images/20200404101227.png "f:id:tomikiya:20200404101227p:plain")
+![](/images/20200404101227.png)
 
 数値ではないデータがあったためです。
 
-![f:id:tomikiya:20200404101251p:plain](/images/20200404101251.png "f:id:tomikiya:20200404101251p:plain")
+![](/images/20200404101251.png)
 
-![f:id:tomikiya:20200404101301p:plain](/images/20200404101301.png "f:id:tomikiya:20200404101301p:plain")
+![](/images/20200404101301.png)
 
 2つ目の例外はちょっと今回の話では対象外として・・・、Errorとなったところはnullにしてみます。  
 エラーが出ている列を指定して[変換]-[値の置換]-[エラーの置換]を選択します。
 
-![f:id:tomikiya:20200404101528p:plain](/images/20200404101528.png "f:id:tomikiya:20200404101528p:plain")
+![](/images/20200404101528.png)
 
 値をnullとします。
 
-![f:id:tomikiya:20200404101554p:plain](/images/20200404101554.png "f:id:tomikiya:20200404101554p:plain")
+![](/images/20200404101554.png)
 
 Errorがnullになりました。
 
-![f:id:tomikiya:20200404101618p:plain](/images/20200404101618.png "f:id:tomikiya:20200404101618p:plain")
+![](/images/20200404101618.png)
 
 ### Excelに張り付け
 
 [閉じて読み込む]でExcelに貼り付けして出来上がりですー。
 
-![f:id:tomikiya:20200404101646p:plain](/images/20200404101646.png "f:id:tomikiya:20200404101646p:plain")
+![](/images/20200404101646.png)
 
 データを再取得したい場合は前述したように、表を右クリックして「更新」だけでOKです。
 

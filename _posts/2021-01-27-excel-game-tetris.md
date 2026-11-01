@@ -92,7 +92,7 @@ https://github.com/tomikiya/excel\_game\_tetris
 
 一応消す方法はあるにはありますがいろいろ制限があるのでテトリスではそこまで実装しません。気になる方は以下の記事をご覧ください。
 
-https://papasensei365.com/excel-nonvba-3d-maze/
+https://tomikiya.github.io/excel-nonvba-3d-maze/
 
 ### ミノを描画する
 
@@ -178,7 +178,7 @@ Excelは一部例外を除きますがほとんどの場合、何も操作しな
 
 詳しい話はドラクエの記事に記載していますのでここでは省略します。ご参考までにどうぞ。
 
-https://papasensei365.com/excel-game-dq3/#toc12
+https://tomikiya.github.io/excel-game-dq3/
 
 #### 疑似プログラミングを使う場合の注意点
 
@@ -474,13 +474,13 @@ Y座標 = 現在位置Y - 落とす判定    '※一部省略
 
 【VBAを使わないExcelゲームシリーズ】
 
-https://papasensei365.com/excel-game-dq3/
+https://tomikiya.github.io/excel-game-dq3/
 
-https://papasensei365.com/excel-game-dq3-english/
+https://tomikiya.github.io/excel-game-dq3-english/
 
-https://papasensei365.com/excel-game-minesweeper/
+https://tomikiya.github.io/excel-game-minesweeper/
 
-https://papasensei365.com/excel-nonvba-3d-maze/
+https://tomikiya.github.io/excel-nonvba-3d-maze/
 
 VBA無しが難易度高いと感じる方はVBAでゲームを作る所から始めてもよいかもしれません。
 

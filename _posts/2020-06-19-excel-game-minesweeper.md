@@ -43,7 +43,7 @@ https://github.com/tomikiya/excel\_game\_minesweeper
 
 前回作成した3D迷路の時と同様にいくつか制限があります。
 
-https://papasensei365.com/excel-nonvba-3d-maze/
+https://tomikiya.github.io/excel-nonvba-3d-maze/
 
 今回も関数と機能だけでゲームを作ることになります。この制限の中でボタン操作を認識したり、ランダムに爆弾を置いたり、状態をリセットしたりと課題がいくつかあります。これまでの知識と新たな小技を組み合わせてこれらを実現することになります。
 
@@ -114,7 +114,7 @@ https://youtu.be/dC0BzTw2z2o
 
 もっと詳細を知りたい方は3D迷路の記事をご確認ください。
 
-https://papasensei365.com/excel-nonvba-3d-maze/
+https://tomikiya.github.io/excel-nonvba-3d-maze/
 
 ## 【小技4】操作のタイムスタンプ取る
 
@@ -470,8 +470,8 @@ https://amzn.to/35b2zrT
 
 【VBAを使わないゲームシリーズ】
 
-https://papasensei365.com/excel-nonvba-3d-maze/
+https://tomikiya.github.io/excel-nonvba-3d-maze/
 
-https://papasensei365.com/excel-game-dq3/
+https://tomikiya.github.io/excel-game-dq3/
 
-https://papasensei365.com/excel-game-tetris/
+https://tomikiya.github.io/excel-game-tetris/

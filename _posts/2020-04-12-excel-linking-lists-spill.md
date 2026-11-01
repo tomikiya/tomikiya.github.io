@@ -9,11 +9,11 @@ categories: [Excel]
 
 スピル機能を使わないで連動させたい場合はこちらをご確認ください。
 
-https://papasensei365.com/excel-linking-the-three-lists/?preview=true&\_thumbnail\_id=391
+https://tomikiya.github.io/excel-linking-the-three-lists/
 
 このようなリストを作れます。
 
-![f:id:tomikiya:20200409222539g:plain](/images/20200409222539.gif "f:id:tomikiya:20200409222539g:plain")
+![](/images/20200409222539.gif)
 
 ## スピル機能とは
 
@@ -29,7 +29,7 @@ https://papasensei365.com/excel-linking-the-three-lists/?preview=true&\_thumbnai
 以下のようにデータ形式のテーブルを用意します。  
 ※テーブル名は分類にしています。
 
-![f:id:tomikiya:20200409222845p:plain](/images/20200409222845.png "f:id:tomikiya:20200409222845p:plain")
+![](/images/20200409222845.png)
 
 ### UNIQUE関数で重複データを消す
 
@@ -42,7 +42,7 @@ https://papasensei365.com/excel-linking-the-three-lists/?preview=true&\_thumbnai
 
 とするだけです。
 
-![f:id:tomikiya:20200409222907p:plain](/images/20200409222907.png "f:id:tomikiya:20200409222907p:plain")
+![](/images/20200409222907.png)
 
 ### FILTER関数で絞り込み
 
@@ -54,7 +54,7 @@ https://papasensei365.com/excel-linking-the-three-lists/?preview=true&\_thumbnai
 中分類のリスト =UNIQUE(FILTER(分類[中分類],分類[大分類]=$J$2))
 ```
 
-![f:id:tomikiya:20200409222926p:plain](/images/20200409222926.png "f:id:tomikiya:20200409222926p:plain")
+![](/images/20200409222926.png)
 
 小分類も同様に中分類でFILTERを書けます。
 
@@ -73,7 +73,7 @@ https://papasensei365.com/excel-linking-the-three-lists/?preview=true&\_thumbnai
 
 ↓大分類のリストを指定する場合のイメージ
 
-![f:id:tomikiya:20200409222944p:plain](/images/20200409222944.png "f:id:tomikiya:20200409222944p:plain")
+![](/images/20200409222944.png)
 
 ## そのほか
 

@@ -14,7 +14,7 @@ https://liginc.co.jp/177947
 
 また、スピル機能を使えば比較的簡単に実装できます。
 
-https://papasensei365.com/excel-linking-lists-spill/
+https://tomikiya.github.io/excel-linking-lists-spill/
 
 しかし、作り方によって課題が含まれていたり、スピル機能を使えないバージョンがあったりするのでケースによってはそのまま使えないことがあります。  
 それらの課題を回避しつつ実務的に使える形まで落とし込めたので紹介します。
@@ -39,7 +39,7 @@ https://papasensei365.com/excel-linking-lists-spill/
 また、それぞれの項目がどの分類に属しているか判別できるようにキーとなる上位分類もセットで管理します。  
 ここで重要なのは**「上位分類」で並べ替えをしておく**ことです。
 
-![f:id:tomikiya:20200418201957p:plain](/images/20200418201957.png "f:id:tomikiya:20200418201957p:plain")
+![](/images/20200418201957.png)
 
 ### OFFSETでリストを取り出し入力規則にする
 
@@ -47,7 +47,7 @@ https://papasensei365.com/excel-linking-lists-spill/
 **開始位置と個数を計算**して**OFFSETで取得する**だけです。  
 上位分類の並べ替えをしておくことで指定する分類の開始位置と指定する分類の個数を計算できるようになります。
 
-![f:id:tomikiya:20200418202203p:plain](/images/20200418202203.png "f:id:tomikiya:20200418202203p:plain")
+![](/images/20200418202203.png)
 
 例えば、漁業の中分類のリストが欲しい時はシート「中分類」の3個目から2個分データを取り出す形になります。
 
@@ -74,7 +74,7 @@ https://papasensei365.com/excel-linking-lists-spill/
 
 ↓入力規則の設定イメージ
 
-![f:id:tomikiya:20200418202511p:plain](/images/20200418202511.png "f:id:tomikiya:20200418202511p:plain")
+![](/images/20200418202511.png)
 
 小分類も同様に求めますが、検索する値は大分類と中分類を結合したものになります。
 

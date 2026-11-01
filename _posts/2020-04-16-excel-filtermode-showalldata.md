@@ -24,7 +24,7 @@ End Sub
 
 簡単なテーブルを作って実行してみます。
 
-![f:id:tomikiya:20200413215448p:plain](/images/20200413215448.png "f:id:tomikiya:20200413215448p:plain")
+![](/images/20200413215448.png)
 
 ↓
 

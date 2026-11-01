@@ -13,7 +13,7 @@ Progressbar.clsをダウンロードしてインポートしてみてくださ�
 # イメージ
 
 ステータスバーに簡易的なプログレスバーを表示します。
-![f:id:tomikiya:20200406233657g:plain](/images/20200406233657.gif "f:id:tomikiya:20200406233657g:plain")
+![](/images/20200406233657.gif)
 
 # 使い方
 
@@ -29,7 +29,7 @@ End Sub
 ```
 
 ↓実行結果
-![f:id:tomikiya:20200406234232p:plain](/images/20200406234232.png "f:id:tomikiya:20200406234232p:plain")
+![](/images/20200406234232.png)
 プログレスバーを動いているように見せたいときはProgressValueを少しずつ変化させてください。
 
 ```
@@ -49,7 +49,7 @@ End Sub
 ```
 
 ↓実行結果
-![f:id:tomikiya:20200406234657g:plain](/images/20200406234657.gif "f:id:tomikiya:20200406234657g:plain")
+![](/images/20200406234657.gif)
 
 # 詳細
 

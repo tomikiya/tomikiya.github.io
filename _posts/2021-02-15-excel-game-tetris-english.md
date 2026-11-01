@@ -90,7 +90,7 @@ It is not possible to change the size and color for form controls. The circles f
 
 There is a way to get rid of it, but it causes various restrictions, so I did not do so for Tetris. If this interests you, please read the following article.
 
-https://papasensei365.com/excel-nonvba-3d-maze/
+https://tomikiya.github.io/excel-nonvba-3d-maze/
 
 ### **Draw the Pieces**
 
@@ -168,7 +168,7 @@ Pseudocode programming is a way to implement programming-like actions in cells. 
 
 I will omit this part, since I included a detailed explanation in the article about Dragon Quest. Please use it as reference by all means.
 
-https://papasensei365.com/excel-game-dq3-english/
+https://tomikiya.github.io/excel-game-dq3-english/
 
 #### **Precautions When Using Pseudocode Programming**
 
@@ -460,10 +460,10 @@ Next up is Mario, but I am not sure if I can actually make it, since it depends 
 
 [Series of Excel Games That Do Not Use VBA]
 
-https://papasensei365.com/excel-game-dq3-english/
+https://tomikiya.github.io/excel-game-dq3-english/
 
-https://papasensei365.com/excel-game-minesweeper/
+https://tomikiya.github.io/excel-game-minesweeper/
 
-https://papasensei365.com/excel-nonvba-3d-maze/
+https://tomikiya.github.io/excel-nonvba-3d-maze/
 
 If you feel that not using VBA is very difficult, it may be best to start with making games using VBA.

@@ -5,7 +5,7 @@ slug: excel-game-dq3-english
 categories: [Excel]
 ---
 
-[日本語](https://papasensei365.com/excel-game-dq3/)
+[日本語](https://tomikiya.github.io/excel-game-dq3/)
 
 It's been a while since I've tried to recreate a game in Excel.
 
@@ -135,7 +135,7 @@ This technology is used to represent the whirlpool when entering a battle scene 
 
 The Minesweeper I made in the past uses this iteration to avoid automatic calculation of volatile functions and to calculate elapsed time. Iteration can be applied to many things. (I'm not saying it can be used in business.)
 
-https://papasensei365.com/excel-game-minesweeper/
+https://tomikiya.github.io/excel-game-minesweeper/
 
 ### **Implement pseudo-programming on cells**
 
@@ -285,7 +285,7 @@ The button controls have been explained in several articles on games I've made, 
 
 In Japanese.
 
-https://papasensei365.com/excel-nonvba-3d-maze/#toc3
+https://tomikiya.github.io/excel-nonvba-3d-maze/
 
 This is how you can recreate Dragon Quest in Excel.
 

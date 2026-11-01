@@ -59,4 +59,4 @@ Excelで伝票や帳票を作成するような業務で、スライサーの操
 今回は単一選択時の取得方法でしたが、複数選択時も取得する方法はあります。  
 若干複雑になるため別で扱いたいと思います。
 
-https://papasensei365.com/excel-selected-slicer2/
+https://tomikiya.github.io/excel-selected-slicer2/
