@@ -5,6 +5,8 @@ slug: powerquery-index-the-group
 categories: [Excel]
 ---
 
+{% raw %}
+
 Power Queryにて、グループ単位でインデックスを付与する方法です。ボタンポチポチだけだとテーブル全体にインデックスを付ける方法しかないので覚えておくと便利かと思います。
 以下のサイトを参考にしました。
 https://www.excelguru.ca/blog/2018/06/27/number-rows-by-group-using-power-query/
@@ -59,3 +61,4 @@ in
 ```
 
 お試しください。
+{% endraw %}

@@ -5,6 +5,8 @@ slug: powerbi-import-pdf
 categories: [PowerPlatform]
 ---
 
+{% raw %}
+
 PDFファイルで保管されたデータを集計して分析したい場合に有効です。  
 今回はPower BIの機能を使ってPDFのデータを収集し、機能の一部であるPower Query にてデータの整形を行います。ビジュアライズの部分は別の記事で紹介します。
 
@@ -257,3 +259,4 @@ PDFからデータの取得とデータの整形について順を追って見�
 コーディングせずにここまで簡単にできてしまうので興味のある方は是非試してみましょう。
 
 次のに読みたい「[Power BIでデータを可視化する](https://papasensei365.com/powerbi-visualize-covid19data/)」
+{% endraw %}
